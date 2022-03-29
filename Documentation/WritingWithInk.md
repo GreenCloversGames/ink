@@ -602,6 +602,8 @@ is actually testing an *integer* and not a true/false flag. A knot or stitch use
 If it's non-zero, it'll return true in a test like the one above, but you can also be more specific as well:
 
 	* {seen_clue > 3} [Flat-out arrest Mr Jefferson]
+	
+However, one important thing to understand about the read counts of knots and stiches is that they only increase if you divert out of the knot/stitch and return to it. A lot of people miss this, resulting in code not working as expected. If your read count is not increasing, this may be the reason why. 
 
 
 #### Advanced: more logic
